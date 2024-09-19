@@ -4,7 +4,7 @@ classifiers=("lr" "nb" "svm" "svm+" "xgb" "deberta" "roberta")
 embed_columns=("text" "text_normalized")
 tasks=("dating" "locating")
 
-base_cmd="python ./src/run_refactored.py"
+base_cmd="python ./src/run.py"
 
 for task in "${tasks[@]}"; do
     for embed_column in "${embed_columns[@]}"; do
